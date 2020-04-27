@@ -17,7 +17,7 @@ $ npm start
 
 ###  Compile assets for production
 
-When building for production, the CSS and JS will be minified. To minify the assets in your `/dist` folder, run
+When building for production, the CSS and JS will be minified. To minify the assets, run
 
 ```bash
 $ npm run build
