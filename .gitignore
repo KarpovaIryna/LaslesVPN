@@ -5,3 +5,4 @@ node_modules
 *.cfg
 prepros-6.config
 *.config
+package-lock.json
