@@ -4,10 +4,10 @@
 @import "elements";
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -18,11 +18,12 @@ h3,
 h4,
 h5,
 h6,
-p, ul {
+p,
+ul {
   margin: 0;
 }
-.hidden{
-	display: none;
+.hidden {
+  display: none;
 }
 /* Layout */
 .ba-container {
@@ -36,7 +37,7 @@ p, ul {
   top: 0;
   width: 100%;
   z-index: 15;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -102,7 +103,7 @@ p, ul {
   &.is-active {
     transition: all 0.5s ease 0s;
     left: 0;
-    background: #FFFFFF;
+    background: #ffffff;
   }
   &__list {
     display: flex;
@@ -366,59 +367,119 @@ p, ul {
     color: #4f5665;
   }
 }
+//Section Features
 .ba-features {
   padding-top: 30px;
   padding-bottom: 40px;
-  @media screen and (min-width:640px){
-	padding-top: 107px;
-	padding-bottom: 127px;
+  @media screen and (min-width: 640px) {
+    padding-top: 107px;
+    padding-bottom: 127px;
   }
   &__wrapper {
     display: flex;
-	 justify-content: space-between;
-	 flex-direction: column;
-	 @media screen and (min-width:640px){
-		flex-direction: row;
-	 }
+    justify-content: space-between;
+    flex-direction: column;
+    @media screen and (min-width: 640px) {
+      flex-direction: row;
+    }
   }
   &__img {
-	 width: 100%;
-	 @media screen and (min-width:640px){
-		width: 50%;
-	 }
+    width: 100%;
+    @media screen and (min-width: 640px) {
+      width: 50%;
+    }
   }
   &__text {
-	width: 100%;
-	 @media screen and (min-width:640px){
-		width: 38%;
-	 }
+    width: 100%;
+    @media screen and (min-width: 640px) {
+      width: 38%;
+    }
   }
   &__title {
     font: 500 26px/1.43 "Rubik", sans-serif;
     color: #0b132a;
-	 padding-bottom: 20px;
-	 padding-top: 15px;
-	 @media screen and (min-width:640px){
-		font: 500 35px/1.43 "Rubik", sans-serif;
-		padding-top: 0;
-	 }
+    padding-bottom: 20px;
+    padding-top: 15px;
+    @media screen and (min-width: 640px) {
+      font: 500 35px/1.43 "Rubik", sans-serif;
+      padding-top: 0;
+    }
   }
   &__subtitle {
     font: 400 16px/1.87 "Rubik", sans-serif;
     color: #4f5665;
-	 padding-bottom: 20px;
+    padding-bottom: 20px;
   }
   &__list {
-	padding:0;
+    padding: 0;
   }
   &__item {
     font: 400 14px/2.14 "Rubik", sans-serif;
     color: #4f5665;
-	 padding-bottom: 15px;
-	 padding-left: 33px;
-	 list-style: none;
-    background: url(../img/list.svg) no-repeat 0 5px; 
-
-	 
+    padding-bottom: 15px;
+    padding-left: 33px;
+    list-style: none;
+    background: url(../img/list.svg) no-repeat 0 5px;
   }
+}
+//Section Pricing
+.ba-pricing {
+  background-color: #f6f6f6;
+ 
+  padding-top: 80px;
+  padding-bottom: 150px;
+  &__title {
+    font: 500 35px/1.43 "Rubik", sans-serif;
+	 color: #0b132a;
+	 padding-bottom: 20px;
+	 text-align: center;
+  }
+  &__subtitle{
+	font: 400 16px/1.87 "Rubik", sans-serif;
+	color: #4F5665;
+	padding-bottom: 60px;
+	text-align: center;
+  }
+  &__wrapper{
+	  display: flex;
+	  justify-content: space-between;
+	  flex-direction: column;
+	  @media screen and (min-width:640px){
+		flex-direction: row;
+	  }
+  }
+}
+
+.ba-plan{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 75px;
+	background-color: #FFFFFF;
+border: 2px solid #DDDDDD;
+border-radius: 10px;
+margin-bottom: 25px;
+@media screen and (min-width:640px){
+	margin-bottom: 0;
+}
+	&__img{
+		width:100%;
+		height:auto;
+	}
+	&__name{
+		padding: 30px 0;
+	
+	}
+	&__list{
+		padding:0;
+	}
+	&__item{
+		list-style: none;
+		background: url(../img/price-list.svg) no-repeat 0 5px;
+		padding-left: 40px;
+	}
+	&__price{
+		
+	}
 }

@@ -1294,7 +1294,7 @@ select {
     transform: rotate(-90deg); }
 
 body {
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
 
 html {
   scroll-behavior: smooth; }
@@ -1308,7 +1308,8 @@ h3,
 h4,
 h5,
 h6,
-p, ul {
+p,
+ul {
   margin: 0; }
 
 .hidden {
@@ -1325,7 +1326,7 @@ p, ul {
   top: 0;
   width: 100%;
   z-index: 15;
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
   .ba-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -1380,7 +1381,7 @@ p, ul {
   .ba-nav.is-active {
     transition: all 0.5s ease 0s;
     left: 0;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .ba-nav__list {
     display: flex;
     flex-direction: column;
@@ -1658,5 +1659,52 @@ p, ul {
     padding-left: 33px;
     list-style: none;
     background: url(../img/list.svg) no-repeat 0 5px; }
+
+.ba-pricing {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 150px; }
+  .ba-pricing__title {
+    font: 500 35px/1.43 "Rubik", sans-serif;
+    color: #0b132a;
+    padding-bottom: 20px;
+    text-align: center; }
+  .ba-pricing__subtitle {
+    font: 400 16px/1.87 "Rubik", sans-serif;
+    color: #4F5665;
+    padding-bottom: 60px;
+    text-align: center; }
+  .ba-pricing__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    @media screen and (min-width: 640px) {
+      .ba-pricing__wrapper {
+        flex-direction: row; } }
+
+.ba-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 75px;
+  background-color: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  margin-bottom: 25px; }
+  @media screen and (min-width: 640px) {
+    .ba-plan {
+      margin-bottom: 0; } }
+  .ba-plan__img {
+    width: 100%;
+    height: auto; }
+  .ba-plan__name {
+    padding: 30px 0; }
+  .ba-plan__list {
+    padding: 0; }
+  .ba-plan__item {
+    list-style: none;
+    background: url(../img/price-list.svg) no-repeat 0 5px;
+    padding-left: 40px; }
 
 /*# sourceMappingURL=style.css.map */
