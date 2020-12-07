@@ -12,36 +12,24 @@ $('ul li a').click(function () {
 		$('.ba-header').removeClass('is-active');
 	}
 });
+
+
 $('.ba-testemonials__slider').slick({
-	dots: false,
-	infinite: false,
-// 	speed: 300,
-// 	arrows: true,
-	slidesToShow: 6,
   slidesToScroll:1,
-	variableWidth: true,
+  infinite: false,
 	mobileFirst: true,
-	slide: '.ba-slide',
-	// swipeToSlide: true,
-	// swipe: true,
-	// responsive: [
-	// 	{
-	// 	  breakpoint: 640,
-	// 	  settings: {
-	// 		 slidesToShow: 2,
-	// 		 slidesToScroll:1,
-	// 		 infinite: true,
-	// 		 dots: true
-	// 	  }
-	// 	},
-	// 	{
-	// 	  breakpoint: 1024,
-	// 	  settings: {
-	// 		 slidesToShow: 1,
-	// 		 slidesToScroll: 1
-	// 	  }
-	// 	},
-	//  ]
+	slide: ".ba-slide",
+	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+			  slidesToScroll:2,
+			  dots: true, 
+			  arrows: true,
+			}
+		 },
+	 ]
  });
- 
+
 
