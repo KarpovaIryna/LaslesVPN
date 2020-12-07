@@ -12,5 +12,28 @@ $('ul li a').click(function () {
 		$('.ba-header').removeClass('is-active');
 	}
 });
+$('.ba-pricing__wrapper').slick({
+	infinite: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	slide: '.ba-plan',
+	arrows: false,
+	adaptiveHeight: false,
+	mobileFirst: true,
+	
+	responsive: [
+		{
+		breakpoint: 640,
+      settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}},
+		{
+			breakpoint: 1080,
+		  settings: 'unslick'
+		}
+
+	]
+ });
  
 

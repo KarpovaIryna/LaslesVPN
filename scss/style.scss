@@ -100,6 +100,7 @@ ul {
   justify-content: center;
   align-items: center;
   overflow: auto;
+
   &.is-active {
     transition: all 0.5s ease 0s;
     left: 0;
@@ -424,62 +425,111 @@ ul {
 }
 //Section Pricing
 .ba-pricing {
-  background-color: #f6f6f6;
- 
+  background: linear-gradient(to bottom, #f6f6f6 0%, rgba(255,255,255,0.01) 100%);
   padding-top: 80px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
+  @media screen and (min-width:640px){
+	padding-bottom:150px;
+  }
   &__title {
     font: 500 35px/1.43 "Rubik", sans-serif;
-	 color: #0b132a;
-	 padding-bottom: 20px;
-	 text-align: center;
+    color: #0b132a;
+    padding-bottom: 20px;
+    text-align: center;
   }
-  &__subtitle{
-	font: 400 16px/1.87 "Rubik", sans-serif;
-	color: #4F5665;
-	padding-bottom: 60px;
-	text-align: center;
+  &__subtitle {
+    font: 400 16px/1.87 "Rubik", sans-serif;
+    color: #4f5665;
+    padding-bottom: 60px;
+    text-align: center;
   }
-  &__wrapper{
-	  display: flex;
-	  justify-content: space-between;
-	  flex-direction: column;
-	  @media screen and (min-width:640px){
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+	 flex-direction: column;
+	//  align-items: center;
+    @media screen and (min-width: 640px) {
 		flex-direction: row;
-	  }
+    }
   }
 }
 
-.ba-plan{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 50px 75px;
-	background-color: #FFFFFF;
-border: 2px solid #DDDDDD;
-border-radius: 10px;
-margin-bottom: 25px;
-@media screen and (min-width:640px){
-	margin-bottom: 0;
+.ba-plan {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  & + .premium {
+	 border: 2px solid #f53838;
+  }
+  @media screen and (min-width: 640px) {
+	 margin-bottom: 0;
+	 padding: 50px 75px;
+	 margin-right: 25px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__name {
+    padding: 30px 0;
+    font: 500 18px/1.67 "Rubik", sans-serif;
+    color: #0b132a;
+  }
+  &__list {
+    padding: 0;
+	 padding-bottom: 50px;
+	 flex-grow: 1;
+  }
+  &__item {
+    list-style: none;
+    background: url(../img/price-list.svg) no-repeat 0 5px;
+    padding-left: 40px;
+    font: 400 14px/2.14 "Rubik", sans-serif;
+    color: #4f5665;
+  }
+  &__price {
+    font: 500 25px/1.2 "Rubik", sans-serif;
+    color: #0b132a;
+    padding-bottom: 20px;
+    & span {
+      font-weight: 500;
+      color: #4f5665;
+    }
+  }
+  &__select {
+    font: 500 16px/1.19 "Rubik", sans-serif;
+    color: #f53838;
+    border: 2px solid #f53838;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 13px 63px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #f53838;
+      color: #ffffff;
+    }
+  }
 }
-	&__img{
-		width:100%;
-		height:auto;
-	}
-	&__name{
-		padding: 30px 0;
-	
-	}
-	&__list{
-		padding:0;
-	}
-	&__item{
-		list-style: none;
-		background: url(../img/price-list.svg) no-repeat 0 5px;
-		padding-left: 40px;
-	}
-	&__price{
-		
-	}
+.premium-button {
+  background-color: #f53838;
+  color: #ffffff;
+  &:hover,
+  &:active,
+  &:focus {
+	color: #f53838;
+	border: 2px solid #f53838;
+	background-color: #ffffff;
+  }
+}
+.ba-map{
+	text-align: center;
+}
+.slick-list {
+	height: auto !important;
 }
