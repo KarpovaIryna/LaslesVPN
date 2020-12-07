@@ -20,7 +20,6 @@ $('.ba-pricing__wrapper').slick({
 	arrows: false,
 	adaptiveHeight: false,
 	mobileFirst: true,
-	
 	responsive: [
 		{
 		breakpoint: 640,

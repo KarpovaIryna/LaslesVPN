@@ -529,7 +529,51 @@ ul {
 }
 .ba-map{
 	text-align: center;
+	margin: 0 auto;
+	&__title{
+		padding-bottom: 20px;
+		font: 500 35px/1.43 "Rubik", sans-serif;
+color: #0B132A;
+@media screen and (min-width:640px){
+	white-space: pre-line;
 }
-.slick-list {
-	height: auto !important;
+	}
+	&__subtitle{
+
+		padding-bottom: 40px;
+		font: 400 16px/1.87 "Rubik", sans-serif;
+		font-family: Rubik;
+color: #4F5665;
+@media screen and (min-width:640px){
+	padding-bottom: 155px;
+	white-space: pre-line;
+}
+& span{
+	font-weight: 500;
+}
+	}
+	&__wrapper{
+		max-width: 998px;
+		display: flex;
+		// flex-direction: column;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		@media screen and (min-width:1025px){
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		vertical-align: baseline;
+		}
+	& img{
+		display: block;
+		height: 100%;
+		width: 30%;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		@media screen and (min-width:1024px){
+			padding-left: 47px;
+			padding-bottom: 0;
+		}
+	}
+	}
 }
