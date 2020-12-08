@@ -20,11 +20,24 @@ $('.ba-testemonials__slider').slick({
 	mobileFirst: true,
 	slide: ".ba-slide",
 	variableWidth: true,
+	appendArrows: '.ba-slider__nav',
+	appendDots: '.ba-slider__nav',
+	dotsClass: 'ba-slider__dot-nav',
+	prevArrow: '.ba-slider__prev',
+	nextArrow: '.ba-slider__next',
 	responsive: [
+		{
+			breakpoint: 640,
+			settings: {
+			  slidesToScroll:2,
+			  dots: true, 
+			  arrows: true,
+			}
+		 },
 		{
 			breakpoint: 1024,
 			settings: {
-			  slidesToScroll:2,
+			  slidesToScroll:3,
 			  dots: true, 
 			  arrows: true,
 			}

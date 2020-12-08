@@ -4,7 +4,7 @@
 @import "elements";
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 @import "slick.scss";
-// @import "slick-theme.scss";
+@import "slick-theme.scss";
 body {
   background-color: #ffffff;
 
@@ -590,6 +590,7 @@ ul {
 }
 .ba-testemonials {
 	overflow: hidden;
+	padding-bottom: 65px;
   &__title {
     font: 500 23px/1.43 "Rubik", sans-serif;
     color: #0b132a;
@@ -611,9 +612,8 @@ ul {
       padding-bottom: 60px;
     }
   }
-  &__slider{
-	display: flex;
-  }
+  
+
 }
 .ba-slide {
   display: flex;
@@ -624,6 +624,7 @@ ul {
 border: 2px solid #DDDDDD;
 border-radius: 10px;
 margin-right: 20px;
+height: 250px;
 @media screen and (min-width:640px){
 	max-width: 320px;
 }
@@ -631,6 +632,7 @@ margin-right: 20px;
 	max-width: 400px;
 	margin-right: 50px;
 }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -673,7 +675,67 @@ margin-right: 20px;
 	color: #0B132A;
   }
 }
+.ba-slider{
+	&__nav{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: center;
+		padding-top: 60px;
+	}
+	&__dot-nav{
+		list-style: none;
+		display: flex;
+		padding: 0;
+	}
+	&__arrow{
+		border: 2px solid #F53838;
+		border-radius: 50%;
+		height: 60px;
+		width: 60px;
+		background-color: #ffff;
+		fill:#F53838;
+		&:hover,
+    &:active,
+    &:focus {
+      fill: #ffffff;
+		background-color: #f53838;
+		outline:0;
+		outline-offset:0
+	 }
+	}
+	&__prev{
+		margin-right: 20px;
+	}
+	&__next{
+		& svg{
+			transform: rotate(180deg);
+		}
+	}
+	
+	&__dot-nav li{
+		width: 15px;
+height: 15px;
+border-radius: 50%;
+background: #DDE0E4;
+margin-right: 15px;
+& button{
+	display: none;
+}
+&.slick-active{
+	width: 35px;
+	background-color: #F53838;
+	border-radius: 10px;
+transition: 0.3s all;
+}
+	}
+}
+//styles for slick slider
 .slick-list{
 	overflow: visible;
 	max-width: 100vw;
 }
+.slick-current{
+	border: 2px solid #F53838;
+}
+
