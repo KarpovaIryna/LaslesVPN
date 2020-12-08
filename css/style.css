@@ -1825,9 +1825,9 @@ ul {
     font: 500 16px/1.19 "Rubik", sans-serif;
     color: #f53838;
     border: 2px solid #f53838;
-    box-sizing: border-box;
     border-radius: 50px;
-    padding: 13px 63px; }
+    padding: 13px 63px;
+    display: inline-block; }
     .ba-plan__select:hover, .ba-plan__select:active, .ba-plan__select:focus {
       color: #ffffff;
       background-color: #f53838;
