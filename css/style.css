@@ -1778,13 +1778,16 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 25px;
+  padding: 40px 25px;
   background-color: #ffffff;
   border: 2px solid #dddddd;
   border-radius: 10px;
   margin-bottom: 25px; }
   .ba-plan:hover {
     border: 2px solid #f53838; }
+  @media screen and (min-width: 1020px) {
+    .ba-plan {
+      padding: 50px 65px; } }
   @media screen and (min-width: 1025px) {
     .ba-plan {
       margin-bottom: 0;
