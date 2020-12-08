@@ -1405,7 +1405,8 @@ ul {
   .ba-header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-top: 15px; }
   .ba-header.is-active {
     position: fixed;
     z-index: 15; }

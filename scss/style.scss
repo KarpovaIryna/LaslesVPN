@@ -42,7 +42,8 @@ ul {
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+	 align-items: center;
+	 padding-top: 15px;
   }
   &.is-active {
     position: fixed;
